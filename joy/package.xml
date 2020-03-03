@@ -26,6 +26,7 @@
   <depend>roscpp</depend>
   <depend>diagnostic_updater</depend>
   <depend>sensor_msgs</depend>
+  <depend>geometry_msgs</depend>
   <depend>joystick</depend>
 
   <test_depend>rosbag</test_depend>
