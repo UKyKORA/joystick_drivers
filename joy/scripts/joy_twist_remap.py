@@ -9,8 +9,8 @@ from geometry_msgs.msg import Twist
 
 class JoyRemap(object):
     def __init__(self):
-        self.lin_max = 1.2 # rospy.get_param("/drive/lin_max")
-        self.ang_max = 3 #rospy.get_param("/drive/ang_max")
+        self.lin_max = rospy.get_param("/drive/lin_max")
+        self.ang_max = rospy.get_param("/drive/ang_max")
         self.pub = rospy.Publisher(
             "/drive_setting",
             Twist,
